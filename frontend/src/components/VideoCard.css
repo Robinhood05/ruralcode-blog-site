@@ -1,0 +1,151 @@
+.video-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(108, 92, 231, 0.2);
+}
+
+.video-thumbnail {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+  background-color: var(--bg-light);
+}
+
+.video-thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.video-card:hover .play-overlay {
+  opacity: 1;
+}
+
+.play-button {
+  transition: transform 0.3s ease;
+}
+
+.video-card:hover .play-button {
+  transform: scale(1.1);
+}
+
+.video-content {
+  padding: 1.5rem;
+  position: relative;
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.category-tech {
+  background-color: #6a4bff;
+  color: white;
+}
+
+.category-coding {
+  background-color: #00c0b5;
+  color: white;
+}
+
+.category-robotics {
+  background-color: #ff6fb1;
+  color: white;
+}
+
+.category-latest {
+  background-color: #ffd54f;
+  color: var(--text-dark);
+}
+
+.video-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0 0 0.5rem 0;
+  line-height: 1.3;
+}
+
+.video-description {
+  color: var(--text-light);
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.video-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+.view-count {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.video-delete-btn {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  color: #ff3f5f;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.video-delete-btn:hover {
+  background: #ff3f5f;
+  color: white;
+  transform: translateY(-1px) scale(1.05);
+}
+

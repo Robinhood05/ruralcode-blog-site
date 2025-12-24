@@ -1,0 +1,73 @@
+:root {
+  /* Palette inspired by juniorcoderz.com */
+  --primary-color: #00c0b5;       /* teal */
+  --primary-dark: #00a89c;
+  --secondary-color: #6a4bff;     /* purple accent */
+  --accent-color: #ffd54f;        /* warm yellow */
+  --accent-2: #ff6fb1;            /* soft pink */
+  --text-dark: #1f2b3a;
+  --text-light: #5b6472;
+  --bg-light: #f7fbfb;
+  --bg-white: #ffffff;
+  --border-color: #e2f0ef;
+  --success-color: #00b894;
+  --warning-color: #ffd166;
+  --search-bg: #f1f7f7;
+  --card-shadow: 0 12px 30px rgba(0, 192, 181, 0.16);
+  --glass: rgba(255, 255, 255, 0.72);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-dark);
+  background: radial-gradient(circle at 20% 20%, rgba(0, 192, 181, 0.18), transparent 36%),
+    radial-gradient(circle at 80% 10%, rgba(106, 75, 255, 0.14), transparent 32%),
+    radial-gradient(circle at 50% 80%, rgba(255, 213, 79, 0.18), transparent 30%),
+    var(--bg-light);
+  line-height: 1.6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
