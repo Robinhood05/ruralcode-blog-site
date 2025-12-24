@@ -1,19 +1,10 @@
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
-  const location = useLocation();
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState('');
-
-  const navItems = [
-    { path: '/', label: 'Home' },
-    { path: '/category/tech', label: 'Tech' },
-    { path: '/category/coding', label: 'Coding' },
-    { path: '/category/robotics', label: 'Robotics' },
-    { path: '/category/latest', label: 'Latest' },
-  ];
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
