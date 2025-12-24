@@ -47,7 +47,7 @@ An educational blogging website focused on teaching coding, technology, and robo
    Create a `.env` file in the `backend` directory:
    ```
    PORT=3001
-   MONGODB_URI=mongodb+srv://robin:EvhrmQ9Hi5xly20W@cluster0.gsuznzp.mongodb.net/Demo
+   MONGODB_URI=
    ```
    
    **Note**: The MongoDB connection string is already configured in the code, but it's recommended to use environment variables for security.
